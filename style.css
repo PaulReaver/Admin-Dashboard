@@ -24,7 +24,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-color:var(--myGreen);
-    padding: 20px;
+    padding: 40px;
 }
 
 .header {
@@ -56,4 +56,34 @@
 .sidebar-icon:first-of-type {
     width: 40px;
     height: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    gap: 20px
+}
+
+.search-icon {
+    width: 25px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.search-bar {
+    flex:1;
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--myBlack);
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.3rem;
 }
