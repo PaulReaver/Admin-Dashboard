@@ -60,6 +60,10 @@
     padding: 20px;
 }
 
+.announcement:hover {
+    cursor: pointer;
+}
+
 hr {
     margin: 0px 15px;
     height: 1px;
@@ -67,7 +71,8 @@ hr {
     border: none;
 }
 
-.announcements-contents {
+.announcements-contents,
+.trending-contents {
     background-color: var(--myGray);
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
@@ -79,6 +84,7 @@ hr {
 }
 
 .announcement-text {
+    font-size: 0.875rem;
     color: grey;
 }
 
@@ -86,6 +92,49 @@ hr {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     padding: 40px 20px;
+}
+
+.trending-user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#trending-user-icon-one {
+    background-color: lightblue;
+    border-radius: 25px;
+}
+
+#trending-user-icon-two {
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+#trending-user-icon-three {
+    background-color: lightpink;
+    border-radius: 25px;
+}
+
+#trending-user-icon-four {
+    border-radius: 25px;
+}
+
+.trending-username {
+    color: white;
+}
+
+.trending-app {
+    color: grey;
+}
+
+.trending-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.trending-item:hover {
+    cursor: pointer;
 }
 
 .main-section-name {
