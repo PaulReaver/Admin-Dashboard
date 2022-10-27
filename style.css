@@ -44,6 +44,54 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 25px;
+    width: 400px;
+    height: 250px;
+    background-color: var(--myGray);
+    border-left: 15px solid var(--myGreen);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 40px 20px;
+}
+
+.card-text {
+    grid-row: 1 / 2;
+}
+
+.card-text:hover {
+    cursor: pointer;
+}
+
+.card-header {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    color: grey;
+}
+
+.card-icons {
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items:flex-end;
+}
+
+.card-icon {
+    filter: invert(1);
+    width: 25px;
+    height: 25px;
+}
+
+.card-icon:hover {
+    cursor: pointer;
+}
+
 .projects-container {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
