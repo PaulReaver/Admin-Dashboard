@@ -3,7 +3,7 @@
 :root {
     --myBlack: #181818;
     --myGray: #303030;
-    --myGreen: #015531;
+    --myGreen: #015530;
 }
 
 * {
@@ -23,7 +23,7 @@
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color:var(--myGreen);
+    background-color: var(--myGreen);
     padding: 40px;
 }
 
@@ -42,6 +42,12 @@
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: 1fr 1fr;
+}
+
+.card-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 400px);
 }
 
 .card {
@@ -79,7 +85,7 @@
     display: flex;
     gap: 20px;
     justify-content: end;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .card-icon {
@@ -90,6 +96,7 @@
 
 .card-icon:hover {
     cursor: pointer;
+    filter: invert(22%) sepia(10%) saturate(5778%) hue-rotate(114deg) brightness(103%) contrast(99%);
 }
 
 .projects-container {
@@ -217,7 +224,7 @@ hr {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0px 40px; 
+    padding: 0px 40px;
 }
 
 .search {
@@ -234,7 +241,7 @@ hr {
 }
 
 .search-bar {
-    flex:1;
+    flex: 1;
     border-style: none;
     border-radius: 20px;
     background-color: var(--myBlack);
@@ -273,7 +280,7 @@ hr {
 }
 
 .notifications-user-name:hover,
-.notifications-user-icon:hover, 
+.notifications-user-icon:hover,
 .notifications-icon:hover {
     cursor: pointer;
 }
@@ -304,7 +311,7 @@ hr {
     gap: 20px;
 }
 
-.buttons > * {
+.buttons>* {
     background-color: var(--myGreen);
     border: none;
     color: white;
@@ -315,7 +322,7 @@ hr {
     border-radius: 20px;
 }
 
-.buttons > *:hover {
+.buttons>*:hover {
     background-color: white;
     color: var(--myGreen);
     cursor: pointer;
